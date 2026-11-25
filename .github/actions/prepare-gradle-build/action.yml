@@ -35,6 +35,7 @@ runs:
       uses: gradle/actions/setup-gradle@4d9f0ba0025fe599b4ebab900eb7f3a1d93ef4c2 # v5.0.0
       with:
         cache-read-only: false
+        cache-cleanup: never
         develocity-access-key: ${{ inputs.develocity-access-key }}
         develocity-token-expiry: 4
     - name: Configure Gradle Properties
